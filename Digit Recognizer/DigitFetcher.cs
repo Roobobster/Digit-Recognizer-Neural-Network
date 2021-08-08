@@ -15,12 +15,15 @@ namespace Digit_Recognizer
         BinaryReader brLabels;
         BinaryReader brImages;
 
+        const string MNIST_LABELS_PATH = @"F:\EPQ\HandWritten Digits\Training Set Labels\train-labels.idx1-ubyte";
+        const string MNIST_IMAGES_PATH = @"F:\EPQ\HandWritten Digits\Training Set Images\train-images.idx3-ubyte";
+
 
 
         public void OpenFileReaders()
         {
-            fsLabels = new FileStream(@"F:\EPQ\HandWritten Digits\Training Set Labels\train-labels.idx1-ubyte", FileMode.Open); // test labels
-            fsImages = new FileStream(@"F:\EPQ\HandWritten Digits\Training Set Images\train-images.idx3-ubyte", FileMode.Open); // test images
+            fsLabels = new FileStream(MNIST_LABELS_PATH, FileMode.Open); // test labels
+            fsImages = new FileStream(MNIST_IMAGES_PATH, FileMode.Open); // test images
             brLabels = new BinaryReader(fsLabels);
             brImages = new BinaryReader(fsImages);
             int magic1 = brImages.ReadInt32(); // discard
