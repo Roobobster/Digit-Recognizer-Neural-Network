@@ -18,4 +18,4 @@ Then there is a number grouper that will split numbers that aren't connected and
 
 
 Made for College EPQ Project 2018.
-Intended to display knowledge on the subject of neural networks not intended to be a final solution for anything. If used for a final solution a lot more validation and refinement of the algorithms should be implemented otherwise will be too slow to be used at realtime.
+Intended to display knowledge on the subject of neural networks not intended to be a final solution for anything. If used for a final solution a lot more validation and refinement of the algorithms should be implemented otherwise will be too slow to be used at realtime. You will also need to download the MNIST handwritten digit dataset to input into it if you want to train it on something, or any other dataset you want to use. But this project is currently only set up to use the MNIST data format but if you parse other data then it can also still be used in this project.
